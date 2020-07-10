@@ -418,8 +418,8 @@ public class SchematicPrinter
         //        player.inventory.currentItem = l_Slot;
         //        minecraft.playerController.updateController();
              //   SalHack.SendMessage("Switching to slot: " + l_Slot);
-            }
-        }
+            //}
+        //}
         
         Stationary = false;
         
