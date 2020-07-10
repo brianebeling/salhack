@@ -401,22 +401,22 @@ public class SchematicPrinter
             extraClicks = 0;
         }
 
-        //if (!swapToItem(player.inventory, itemStack))
-        //{
-        //    return false;
-        //}
-
-        if (itemStack != null)
+        if (!swapToItem(player.inventory, itemStack))
         {
-            int l_Slot = player.inventory.getSlotFor(itemStack);
+            return false;
+        }
+
+        //if (itemStack != null)
+        //{
+         //   int l_Slot = player.inventory.getSlotFor(itemStack);
             
-            if (l_Slot == -1)
-                return false;
+        //    if (l_Slot == -1)
+        //        return false;
             
-            if (player.inventory.getStackInSlot(l_Slot).getItem() == itemStack.getItem())
-            {
-                player.inventory.currentItem = l_Slot;
-                minecraft.playerController.updateController();
+//if (player.inventory.getStackInSlot(l_Slot).getItem() == itemStack.getItem())
+       //     {
+        //        player.inventory.currentItem = l_Slot;
+        //        minecraft.playerController.updateController();
              //   SalHack.SendMessage("Switching to slot: " + l_Slot);
             }
         }
