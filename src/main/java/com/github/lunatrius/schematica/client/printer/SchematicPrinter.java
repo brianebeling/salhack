@@ -410,8 +410,7 @@ public class SchematicPrinter
         {
             int l_Slot = player.inventory.getSlotFor(itemStack);
             
-            /// Prevent accessing slots outside of hotbar.
-            if (l_Slot == -1 || l_Slot >= 9)
+            if (l_Slot == -1)
                 return false;
             
             if (player.inventory.getStackInSlot(l_Slot).getItem() == itemStack.getItem())
